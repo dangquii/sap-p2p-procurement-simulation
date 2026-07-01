@@ -3,7 +3,11 @@
 **A procurement control tower built in Excel and Power BI, modelling the full purchase to pay cycle for a Melbourne wholesale distributor.**
 
 Tools: Microsoft Excel (advanced), Power BI, SAP process modelling
-Author: Will Dang | [LinkedIn](#) | [Live dashboard available here: https://app.powerbi.com/groups/me/reports/f45d6fde-8d9c-4f2d-8559-44dcff26d900/55ff5f36c916494b0026?ctid=76fd4887-de7f-4d73-98ab-1e23ad2b215a&experience=power-bi&bookmarkGuid=f8669606-316d-4122-bf2c-8a796c465571]
+
+**Author:** Will Dang
+
+- [LinkedIn](https://www.linkedin.com/in/YOUR-LINK)
+- [Live Power BI Dashboard](https://app.powerbi.com/groups/me/reports/f45d6fde-8d9c-4f2d-8559-44dcff26d900/55ff5f36c916494b0026?ctid=76fd4887-de7f-4d73-98ab-1e23ad2b215a&experience=power-bi&bookmarkGuid=f8669606-316d-4122-bf2c-8a796c465571)
 
 ---
 
@@ -84,19 +88,19 @@ A four page procurement control tower reporting on the data above.
 
 1. **Executive Summary**: Spend, active vendors, blocked value, open POs, and contracts expiring, with spend by vendor and orders by scenario
 
-![Executive Summary](screenshots/page1_executive_summary.png)
+![Executive Summary](./screenshots/page1_executive_summary.png)
 
 2. **Open PO Tracker**: Delivery performance, exception count, and a detailed list of every delayed order
 
-![Open PO Tracker](screenshots/page2_open_po_tracker.png)
+![Open PO Tracker](./screenshots/page2_open_po_tracker.png)
 
 3. **Three Way Match Exceptions**: Blocked invoice value split by quantity shortage and price variance, with the full blocked PO register
 
-![Three Way Match Exceptions](screenshots/page3_3way_match_exceptions.png)
+![Three Way Match Exceptions](./screenshots/page3_3way_match_exceptions.png)
 
 4. **Vendor Scorecard**: Contract status, days to expiry, price variance, and renewal actions for every supplier
 
-![Vendor Scorecard](screenshots/page4_vendor_scorecard.png)
+![Vendor Scorecard](./screenshots/page4_vendor_scorecard.png)
 
 ---
 
