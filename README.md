@@ -3,7 +3,7 @@
 **A procurement control tower built in Excel and Power BI, modelling the full purchase to pay cycle for a Melbourne wholesale distributor.**
 
 Tools: Microsoft Excel (advanced), Power BI, SAP process modelling
-Author: Will Dang | [LinkedIn](#) | [Live dashboard available on request]
+Author: Will Dang | [LinkedIn](#) | [Live dashboard available here: https://app.powerbi.com/groups/me/reports/f45d6fde-8d9c-4f2d-8559-44dcff26d900/55ff5f36c916494b0026?ctid=76fd4887-de7f-4d73-98ab-1e23ad2b215a&experience=power-bi&bookmarkGuid=f8669606-316d-4122-bf2c-8a796c465571]
 
 ---
 
