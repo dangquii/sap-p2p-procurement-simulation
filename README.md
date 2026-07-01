@@ -83,9 +83,20 @@ All figures are outputs of the compliance logic built into the workbook and dash
 A four page procurement control tower reporting on the data above.
 
 1. **Executive Summary**: Spend, active vendors, blocked value, open POs, and contracts expiring, with spend by vendor and orders by scenario
+
+![Executive Summary](screenshots/page1_executive_summary.png)
+
 2. **Open PO Tracker**: Delivery performance, exception count, and a detailed list of every delayed order
+
+![Open PO Tracker](screenshots/page2_open_po_tracker.png)
+
 3. **Three Way Match Exceptions**: Blocked invoice value split by quantity shortage and price variance, with the full blocked PO register
+
+![Three Way Match Exceptions](screenshots/page3_3way_match_exceptions.png)
+
 4. **Vendor Scorecard**: Contract status, days to expiry, price variance, and renewal actions for every supplier
+
+![Vendor Scorecard](screenshots/page4_vendor_scorecard.png)
 
 ---
 
