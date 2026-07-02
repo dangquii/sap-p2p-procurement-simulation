@@ -4,10 +4,7 @@
 
 Tools: Microsoft Excel (advanced), Power BI, SAP process modelling
 
-**Author:** Will Dang
-
-- [LinkedIn](https://www.linkedin.com/in/YOUR-LINK)
-- [Live Power BI Dashboard](https://app.powerbi.com/groups/me/reports/f45d6fde-8d9c-4f2d-8559-44dcff26d900/55ff5f36c916494b0026?ctid=76fd4887-de7f-4d73-98ab-1e23ad2b215a&experience=power-bi&bookmarkGuid=f8669606-316d-4122-bf2c-8a796c465571)
+Author: Will Dang | [LinkedIn](https://www.linkedin.com/in/phu-qui-dang) | Dashboard screenshots available in the screenshots folder
 
 ---
 
@@ -44,9 +41,9 @@ The simulation follows the standard SAP procure to pay flow, using the real tran
 
 Three operational scenarios are engineered into the transaction data so the compliance logic has something real to catch:
 
-1. **Clean loop**: Order, receipt, and invoice all agree. Result: CLEARED.
-2. **Freight shortage**: Goods received short of the order quantity. Result: BLOCKED for quantity variance.
-3. **Price variance**: Invoice priced above the purchase order. Result: BLOCKED for price variance.
+1. **Clean loop**: order, receipt, and invoice all agree. Result: CLEARED.
+2. **Freight shortage**: goods received short of the order quantity. Result: BLOCKED for quantity variance.
+3. **Price variance**: invoice priced above the purchase order. Result: BLOCKED for price variance.
 
 ---
 
@@ -57,15 +54,15 @@ The workbook (`data/SAP_P2P_Simulation.xlsx`) contains eight linked tabs modelli
 **Master data**
 - Material Master (MARA / MARC): 20 materials with ABC classification, safety stock, reorder points, lead times
 - Vendor Master (LFA1 / LFM1): 5 suppliers across 4 countries with payment terms and Incoterms
-- Purchasing Info Records (EINA): Material to vendor links with lead times and contract dates
+- Purchasing Info Records (EINA): material to vendor links with lead times and contract dates
 
 **Costing and sourcing**
 - Landed Cost and TCO Calculator: Incoterms 2020 (FOB, DDP, CIF), customs duty, and freight across import lanes
-- RFQ Evaluation Matrix: Weighted supplier scoring on price, lead time, payment terms, quality, and local versus imported
+- RFQ Evaluation Matrix: weighted supplier scoring on price, lead time, payment terms, quality, and local versus imported
 
 **Transactions and control**
 - Transaction Log (EKKO / EKPO): 33 transaction lines across 11 purchase orders and the three scenarios
-- Three Way Matching Compliance Matrix: Automated CLEARED and BLOCKED flagging
+- Three Way Matching Compliance Matrix: automated CLEARED and BLOCKED flagging
 - Contract Performance Tracker: 5 supplier contracts with expiry monitoring and renewal actions
 
 ---
@@ -86,38 +83,38 @@ All figures are outputs of the compliance logic built into the workbook and dash
 
 A four page procurement control tower reporting on the data above.
 
-1. **Executive Summary**: Spend, active vendors, blocked value, open POs, and contracts expiring, with spend by vendor and orders by scenario
+**1. Executive Summary**: spend, active vendors, blocked value, open POs, and contracts expiring, with spend by vendor and orders by scenario
 
-![Executive Summary](./screenshots/page1_executive_summary.png)
+![Executive Summary](screenshots/page1_executive_summary.png)
 
-2. **Open PO Tracker**: Delivery performance, exception count, and a detailed list of every delayed order
+**2. Open PO Tracker**: delivery performance, exception count, and a detailed list of every delayed order
 
-![Open PO Tracker](./screenshots/page2_open_po_tracker.png)
+![Open PO Tracker](screenshots/page2_open_po_tracker.png)
 
-3. **Three Way Match Exceptions**: Blocked invoice value split by quantity shortage and price variance, with the full blocked PO register
+**3. Three Way Match Exceptions**: blocked invoice value split by quantity shortage and price variance, with the full blocked PO register
 
-![Three Way Match Exceptions](./screenshots/page3_3way_match_exceptions.png)
+![Three Way Match Exceptions](screenshots/page3_3way_match_exceptions.png)
 
-4. **Vendor Scorecard**: Contract status, days to expiry, price variance, and renewal actions for every supplier
+**4. Vendor Scorecard**: contract status, days to expiry, price variance, and renewal actions for every supplier
 
-![Vendor Scorecard](./screenshots/page4_vendor_scorecard.png)
+![Vendor Scorecard](screenshots/page4_vendor_scorecard.png)
 
 ---
 
 ## Tools used
 
-- **Microsoft Excel**: Master data, transaction modelling, XLOOKUP and IF based three way match logic, landed cost calculation, RFQ scoring
-- **Power BI**: Data model, DAX measures, four page interactive dashboard
-- **SAP process knowledge**: Procure to pay cycle and transaction codes (ME21N, MIGO, MIRO)
+- **Microsoft Excel**: master data, transaction modelling, XLOOKUP and IF based three way match logic, landed cost calculation, RFQ scoring
+- **Power BI**: data model, DAX measures, four page interactive dashboard
+- **SAP process knowledge**: procure to pay cycle and transaction codes (ME21N, MIGO, MIRO)
 
 ---
 
 ## How to navigate this project
 
-- `data/` : The complete Excel workbook, the source of everything
-- `dashboard/` : The Power BI file (`procurement_control_tower.pbix`)
-- `screenshots/` : Images of all four dashboard pages
-- `docs/` : Business scenario, SAP transaction guide, and RFQ template
+- `data/`: the complete Excel workbook, the source of everything
+- `dashboard/`: the Power BI file (`procurement_control_tower.pbix`)
+- `screenshots/`: images of all four dashboard pages
+- `docs/`: business scenario, SAP transaction guide, and RFQ template
 
 Start with the Excel workbook to see the data engineering, then open the dashboard screenshots to see the reporting layer.
 
