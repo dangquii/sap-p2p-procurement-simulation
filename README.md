@@ -4,7 +4,7 @@
 
 Tools: Microsoft Excel (advanced), Power BI, SAP process modelling
 
-Author: Will Dang | [LinkedIn](https://www.linkedin.com/in/phu-qui-dang) | Dashboard screenshots available in the screenshots folder
+Author: Will Dang | [LinkedIn](https://www.linkedin.com/in/phuquidang/) | Dashboard screenshots available in the screenshots folder
 
 ---
 
@@ -28,6 +28,21 @@ Purchasing teams lose money and control in four recurring places. This project b
 | Overpaying suppliers on price creep | Price variance detection catches invoices priced above the agreed PO |
 | Short deliveries slipping through unnoticed | Quantity variance flagging holds shortages for review |
 | Contracts expiring without action | Contract tracker surfaces renewals due within 90 days |
+
+---
+
+## Business questions this project answers
+ 
+This dashboard was built around the questions a procurement manager asks at the start of every week. Each question maps directly to a visual on the dashboard.
+ 
+| Business question | Where the answer lives |
+|---|---|
+| How much did we spend last period, and which suppliers received the most? | Page 1: Executive Summary, Total Spend by Vendor chart |
+| Which invoices are currently blocked from payment, and why? | Page 3: Three Way Match Exceptions, blocked PO table |
+| Are any suppliers delivering short or charging above the agreed price? | Page 3: Qty Shortage and Price Variance charts |
+| Which supplier contracts are approaching expiry and need action? | Page 4: Vendor Scorecard, Days to Expiry column |
+| Which purchase orders had delivery delays, and by how many days? | Page 2: Open PO Tracker, Delivery Delays chart |
+| Is our spend too concentrated in one supplier? | Page 1: Executive Summary, spend distribution by vendor |
 
 ---
 
